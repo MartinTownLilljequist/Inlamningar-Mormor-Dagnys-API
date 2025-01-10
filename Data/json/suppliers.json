@@ -1,0 +1,34 @@
+[
+  {
+    "supplierId": 1,
+    "supplierName": "Emmas Skafferi",
+    "supplierAddress": "Branteviksgatan 4C 21441 Malmö",
+    "supplierContact": "Emma Lönnestål",
+    "supplierPhone": "076-106 26 87",
+    "supplierEmail": "hej@emmas.se"
+  },
+  {
+    "supplierId": 2,
+    "supplierName": "Martins Skafferi",
+    "supplierAddress": "Branteviksgatan 4C 21441 Malmö",
+    "supplierContact": "Martin Town Lilljequist",
+    "supplierPhone": "073-764 25 95",
+    "supplierEmail": "hej@martins.se"
+  },
+  {
+    "supplierId": 3,
+    "supplierName": "Eriks Skafferi",
+    "supplierAddress": "Hammarbyvägen 8 151 68 Stockholm",
+    "supplierContact": "Erik Larsson",
+    "supplierPhone": "073-672 76 86",
+    "supplierEmail": "hej@eriks.se"
+  },
+  {
+    "supplierId": 4,
+    "supplierName": "Christines Skafferi",
+    "supplierAddress": "Skogsvägen 53 328 26 Vejbystrand",
+    "supplierContact": "Christine Svensson",
+    "supplierPhone": "070-725 75 72",
+    "supplierEmail": "hej@christines.se"
+  }
+]

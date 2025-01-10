@@ -1,0 +1,92 @@
+[
+  {
+    "supplierId": 1,
+    "productId": 1,
+    "productName": "Vetemjöl",
+    "price": 29.95
+  },
+  {
+    "supplierId": 1,
+    "productId": 2,
+    "productName": "Socker",
+    "price": 32.95
+  },
+  {
+    "supplierId": 2,
+    "productId": 3,
+    "productName": "Ägg",
+    "price": 28.95
+  },
+  {
+    "supplierId": 2,
+    "productId": 4,
+    "productName": "Havregryn",
+    "price": 39.95
+  },
+  {
+    "supplierId": 3,
+    "productId": 5,
+    "productName": "Kakao",
+    "price": 24.95
+  },
+  {
+    "supplierId": 3,
+    "productId": 6,
+    "productName": "Bakpulver",
+    "price": 28.95
+  },
+  {
+    "supplierId": 1,
+    "productId": 7,
+    "productName": "Vaniljpulver",
+    "price": 33.95
+  },
+  {
+    "supplierId": 4,
+    "productId": 8,
+    "productName": "Havremjölk",
+    "price": 37.95
+  },
+  {
+    "supplierId": 3,
+    "productId": 9,
+    "productName": "Pärlsocker",
+    "price": 22.95
+  },
+  {
+    "supplierId": 2,
+    "productId": 10,
+    "productName": "Vaniljstång",
+    "price": 23.95
+  },
+  {
+    "supplierId": 4,
+    "productId": 11,
+    "productName": "Kanel",
+    "price": 21.95
+  },
+  {
+    "supplierId": 2,
+    "productId": 11,
+    "productName": "Kanel",
+    "price": 18.95
+  },
+  {
+    "supplierId": 1,
+    "productId": 10,
+    "productName": "Vaniljstång",
+    "price": 26.95
+  },
+  {
+    "supplierId": 3,
+    "productId": 7,
+    "productName": "Vaniljpulver",
+    "price": 31.95
+  },
+  {
+    "supplierId": 4,
+    "productId": 3,
+    "productName": "Ägg",
+    "price": 31.95
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "itemNumber": "1421",
+    "productName": "Vetemjöl",
+    "price": 29.95,
+    "image": "mjöl.jpg",
+    "description": "Egologiskt vetemjöl"
+  },
+  {
+    "itemNumber": "5432",
+    "productName": "Socker",
+    "price": 32.95,
+    "image": "socker.jpg",
+    "description": "Ekologisk strösocker"
+  },
+  {
+    "itemNumber": "37654",
+    "productName": "Ägg",
+    "price": 28.95,
+    "image": "ägg.jpg",
+    "description": "Ekologiska ägg från frigående höns"
+  },
+  {
+    "itemNumber": "49765",
+    "productName": "Havregryn",
+    "price": 39.95,
+    "image": "havregryn.jpg",
+    "description": "Ekologiskt havregryn"
+  },
+  {
+    "itemNumber": "54321",
+    "productName": "Kakao",
+    "price": 24.95,
+    "image": "kakao.jpg",
+    "description": "Ekologiskt kakao"
+  },
+  {
+    "itemNumber": "613",
+    "productName": "Bakpulver",
+    "price": 28.95,
+    "image": "bakpulver.jpg",
+    "description": "Ekologiskt bakpulver"
+  },
+  {
+    "itemNumber": "7532",
+    "productName": "Vaniljpulver",
+    "price": 33.95,
+    "image": "vaniljpulver.jpg",
+    "description": "Ekologiskt vaniljpulver"
+  },
+  {
+    "itemNumber": "85326",
+    "productName": "Havremjölk",
+    "price": 37.95,
+    "image": "havremjölk.jpg",
+    "description": "Ekologiskt framställd havremjölk"
+  },
+  {
+    "itemNumber": "954325",
+    "productName": "Pärlsocker",
+    "price": 22.95,
+    "image": "pärlsocker.jpg",
+    "description": "Ekologiskt pärlsocker"
+  },
+  {
+    "itemNumber": "10421",
+    "productName": "Vaniljstång",
+    "price": 23.95,
+    "image": "vaniljstång.jpg",
+    "description": "Ekologisk vaniljstång"
+  },
+  {
+    "itemNumber": "1153425",
+    "productName": "Kanel",
+    "price": 21.95,
+    "image": "kanel.jpg",
+    "description": "Ekologisk kanel"
+  }
+]
