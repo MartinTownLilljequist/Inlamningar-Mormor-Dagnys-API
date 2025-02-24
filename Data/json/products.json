@@ -3,77 +3,121 @@
     "itemNumber": "1421",
     "productName": "Vetemjöl",
     "price": 29.95,
-    "image": "mjöl.jpg",
-    "description": "Egologiskt vetemjöl"
+    "weight": "1 kg",
+    "amount": "1",
+    "bestBeforeDate": "2025-12-01",
+    "manufactureDate": "2024-12-01",
+    "description": "Egologiskt vetemjöl",
+    "image": "mjöl.jpg"
   },
   {
     "itemNumber": "5432",
     "productName": "Socker",
     "price": 32.95,
-    "image": "socker.jpg",
-    "description": "Ekologisk strösocker"
+    "weight": "1 kg",
+    "amount": "1",
+    "bestBeforeDate": "2025-12-01",
+    "manufactureDate": "2024-12-01",
+    "description": "Ekologisk strösocker",
+    "image": "socker.jpg"
   },
   {
     "itemNumber": "37654",
     "productName": "Ägg",
     "price": 28.95,
-    "image": "ägg.jpg",
-    "description": "Ekologiska ägg från frigående höns"
+    "weight": "500g",
+    "amount": "12 st",
+    "bestBeforeDate": "2025-12-01",
+    "manufactureDate": "2024-12-01",
+    "description": "Ekologiska ägg från frigående höns",
+    "image": "ägg.jpg"
   },
   {
     "itemNumber": "49765",
     "productName": "Havregryn",
     "price": 39.95,
-    "image": "havregryn.jpg",
-    "description": "Ekologiskt havregryn"
+    "weight": "1 kg",
+    "amount": "1",
+    "bestBeforeDate": "2025-12-01",
+    "manufactureDate": "2024-12-01",
+    "description": "Ekologiskt havregryn",
+    "image": "havregryn.jpg"
   },
   {
     "itemNumber": "54321",
     "productName": "Kakao",
     "price": 24.95,
-    "image": "kakao.jpg",
-    "description": "Ekologiskt kakao"
+    "weight": "500 g",
+    "amount": "1",
+    "bestBeforeDate": "2025-12-01",
+    "manufactureDate": "2024-12-01",
+    "description": "Ekologiskt kakao",
+    "image": "kakao.jpg"
   },
   {
     "itemNumber": "613",
     "productName": "Bakpulver",
     "price": 28.95,
-    "image": "bakpulver.jpg",
-    "description": "Ekologiskt bakpulver"
+    "weight": "500 g",
+    "amount": "1",
+    "bestBeforeDate": "2025-12-01",
+    "manufactureDate": "2024-12-01",
+    "description": "Ekologiskt bakpulver",
+    "image": "bakpulver.jpg"
   },
   {
     "itemNumber": "7532",
     "productName": "Vaniljpulver",
     "price": 33.95,
-    "image": "vaniljpulver.jpg",
-    "description": "Ekologiskt vaniljpulver"
+    "weight": "50 g",
+    "amount": "1",
+    "bestBeforeDate": "2025-12-01",
+    "manufactureDate": "2024-12-01",
+    "description": "Ekologiskt vaniljpulver",
+    "image": "vaniljpulver.jpg"
   },
   {
     "itemNumber": "85326",
     "productName": "Havremjölk",
     "price": 37.95,
-    "image": "havremjölk.jpg",
-    "description": "Ekologiskt framställd havremjölk"
+    "weight": "1 l",
+    "amount": "12 st",
+    "bestBeforeDate": "2025-12-01",
+    "manufactureDate": "2024-12-01",
+    "description": "Ekologiskt framställd havremjölk, i kollin om 12st",
+    "image": "havremjölk.jpg"
   },
   {
     "itemNumber": "954325",
     "productName": "Pärlsocker",
     "price": 22.95,
-    "image": "pärlsocker.jpg",
-    "description": "Ekologiskt pärlsocker"
+    "weight": "500 g",
+    "amount": "1",
+    "bestBeforeDate": "2025-12-01",
+    "manufactureDate": "2024-12-01",
+    "description": "Ekologiskt pärlsocker",
+    "image": "pärlsocker.jpg"
   },
   {
     "itemNumber": "10421",
     "productName": "Vaniljstång",
     "price": 23.95,
-    "image": "vaniljstång.jpg",
-    "description": "Ekologisk vaniljstång"
+    "weight": "500g",
+    "amount": "24st",
+    "bestBeforeDate": "2025-12-01",
+    "manufactureDate": "2024-12-01",
+    "description": "Ekologiska vaniljstänger, i kollin om 24st",
+    "image": "vaniljstång.jpg"
   },
   {
     "itemNumber": "1153425",
     "productName": "Kanel",
     "price": 21.95,
-    "image": "kanel.jpg",
-    "description": "Ekologisk kanel"
+    "weight": "500 g",
+    "amount": "24st",
+    "bestBeforeDate": "2025-12-01",
+    "manufactureDate": "2024-12-01",
+    "description": "Ekologisk kanel, i kollin om 24st",
+    "image": "kanel.jpg"
   }
 ]

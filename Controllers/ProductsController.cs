@@ -18,11 +18,15 @@ public class ProductsController(DataContext context) : ControllerBase
     var products = await _context.Products
       .Select(product => new
       {
-        product.ProductId,
+        product.Id,
         product.ItemNumber,
         product.ProductName,
-        product.Description,
         product.Price,
+        product.Weight,
+        product.Amount,
+        product.BestBeforeDate,
+        product.ManufactureDate,
+        product.Description,
         product.Image
       }
       )
@@ -34,10 +38,10 @@ public class ProductsController(DataContext context) : ControllerBase
   public async Task<ActionResult> FindProduct(int id)
   {
     var product = await _context.Products
-      .Where(p => p.ProductId == id)
+      .Where(p => p.Id == id)
       .Select(product => new
       {
-        product.ProductId,
+        product.Id,
         product.ItemNumber,
         product.ProductName,
         product.Description,
@@ -78,7 +82,7 @@ public class ProductsController(DataContext context) : ControllerBase
       ItemNumber = model.ItemNumber,
       ProductName = model.ProductName,
       Description = model.Description,
-      Price = model.Price,
+      Price = (double)model.Price,
       Image = model.Image
     };
 
@@ -88,7 +92,7 @@ public class ProductsController(DataContext context) : ControllerBase
       await _context.SaveChangesAsync();
 
       // return Ok(new {success=true, data = product});
-      return CreatedAtAction(nameof(FindProduct), new { id = product.ProductId }, product);
+      return CreatedAtAction(nameof(FindProduct), new { id = product.Id }, product);
     }
     catch (Exception ex)
     {
@@ -101,7 +105,7 @@ public class ProductsController(DataContext context) : ControllerBase
   // public async Task<ActionResult> UpdateProductPrice(int id, double price)
   public async Task<ActionResult> UpdateProductPrice(int id, [FromQuery] double price)
   {
-    var prod = await _context.Products.FirstOrDefaultAsync(p => p.ProductId == id);
+    var prod = await _context.Products.FirstOrDefaultAsync(p => p.Id == id);
 
     if (prod == null)
     {

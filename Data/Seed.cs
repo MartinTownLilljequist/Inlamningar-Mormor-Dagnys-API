@@ -5,13 +5,12 @@ namespace eshop.api.Data;
 
 public static class Seed
 {
+  private static readonly JsonSerializerOptions options = new()
+  {
+    PropertyNameCaseInsensitive = true
+  };
   public static async Task LoadProducts(DataContext context)
   {
-    var options = new JsonSerializerOptions
-    {
-      PropertyNameCaseInsensitive = true
-    };
-
     if (context.Products.Any()) return;
 
     var json = File.ReadAllText("Data/json/products.json");
@@ -24,13 +23,22 @@ public static class Seed
     }
   }
 
+  public static async Task LoadAddressTypes(DataContext context)
+  {
+    if (context.AddressTypes.Any()) return;
+
+    var json = await File.ReadAllTextAsync("Data/json/addressTypes.json");
+    var types = JsonSerializer.Deserialize<List<AddressType>>(json, options);
+
+    if (types is not null && types.Count > 0)
+    {
+      await context.AddressTypes.AddRangeAsync(types);
+      await context.SaveChangesAsync();
+    }
+  }
+
   public static async Task LoadSuppliers(DataContext context)
   {
-    var options = new JsonSerializerOptions
-    {
-      PropertyNameCaseInsensitive = true
-    };
-
     if (context.Suppliers.Any()) return;
 
     var json = File.ReadAllText("Data/json/suppliers.json");
@@ -45,11 +53,6 @@ public static class Seed
 
   public static async Task LoadSupplierProducts(DataContext context)
   {
-    var options = new JsonSerializerOptions
-    {
-      PropertyNameCaseInsensitive = true
-    };
-
     if (context.SupplierProducts.Any()) return;
 
     var json = File.ReadAllText("Data/json/supplierproducts.json");

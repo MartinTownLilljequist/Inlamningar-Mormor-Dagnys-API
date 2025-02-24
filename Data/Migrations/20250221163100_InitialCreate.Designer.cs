@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using eshop.api.Data;
 
@@ -10,9 +11,11 @@ using eshop.api.Data;
 namespace eshop.api.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20250221163100_InitialCreate")]
+    partial class InitialCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.0");
@@ -101,7 +104,7 @@ namespace eshop.api.Data.Migrations
                     b.Property<int>("SalesOrderId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<double>("ProductPrice")
+                    b.Property<double>("Price")
                         .HasColumnType("REAL");
 
                     b.Property<int>("Quantity")
@@ -137,12 +140,6 @@ namespace eshop.api.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Amount")
-                        .HasColumnType("TEXT");
-
-                    b.Property<DateTime>("BestBeforeDate")
-                        .HasColumnType("TEXT");
-
                     b.Property<string>("Description")
                         .HasColumnType("TEXT");
 
@@ -152,16 +149,10 @@ namespace eshop.api.Data.Migrations
                     b.Property<string>("ItemNumber")
                         .HasColumnType("TEXT");
 
-                    b.Property<DateTime>("ManufactureDate")
-                        .HasColumnType("TEXT");
-
                     b.Property<double>("Price")
                         .HasColumnType("REAL");
 
                     b.Property<string>("ProductName")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Weight")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
@@ -175,18 +166,10 @@ namespace eshop.api.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("CustomerId")
-                        .HasColumnType("INTEGER");
-
                     b.Property<DateTime>("OrderDate")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("ProductId")
-                        .HasColumnType("INTEGER");
-
                     b.HasKey("SalesOrderId");
-
-                    b.HasIndex("CustomerId");
 
                     b.ToTable("SalesOrders");
                 });
@@ -305,17 +288,6 @@ namespace eshop.api.Data.Migrations
                     b.Navigation("Product");
 
                     b.Navigation("SalesOrder");
-                });
-
-            modelBuilder.Entity("eshop.api.Entities.SalesOrder", b =>
-                {
-                    b.HasOne("eshop.api.Entities.Customer", "Customer")
-                        .WithMany()
-                        .HasForeignKey("CustomerId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Customer");
                 });
 
             modelBuilder.Entity("eshop.api.Entities.SupplierAddress", b =>
